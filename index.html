@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        #info {
+            display: none;
+        }
+    </style>
+    <title>Find Info About Any Country!</title>
+</head>
+<body class="bg-dark">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div id="card" class="card bg-primary text-white mt-5 p-4">
+                <h1>Country Info</h1>
+                <p>Enter a country name to get information</p>
+                <div class="d-flex flex-column align-items-stretch">
+                    <input type="text" class="form-control form-control-lg mb-1" id="name-input" placeholder="Enter a name...">
+                    <button id="activator" class="form-control-lg btn btn-secondary form-control">Get info</button>
+                </div>
+                <div id="info" class="card-body">
+                    <h4 class="card-title" id="title">
+                    </h4>
+                    <p id="info-text" class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
